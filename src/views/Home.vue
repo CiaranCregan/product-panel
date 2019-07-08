@@ -1,0 +1,59 @@
+<template>
+        <v-layout wrap>
+            <v-flex sm12 class="pl-2 pr-2">
+                <div>
+                    <h3>Dashboard</h3>
+                </div>
+            </v-flex>
+            <v-flex xs12 sm4 md3>
+                <v-card dark class="ma-1" color="blue darken-1">
+                    <v-card-title primary-title>
+                        <div>
+                            <div class="headline">Unlimited music now</div>
+                            <span>Listen to your favorite artists and albums whenever and wherever, online and offline.</span>
+                        </div>
+                    </v-card-title>
+                    <v-card-actions>
+                        <v-btn flat dark>Listen now</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-flex>
+        </v-layout>
+</template>
+
+<script>
+export default {
+    computed: {
+        uniqueUsers() {
+            return this.$store.getters.returnUsers
+        }
+    },
+    methods: {
+        // filterUser(){
+        //     let usernames = this.users.map(function(user){
+        //         return user.username;
+        //     })
+
+        //     var uniqueUsers = usernames.filter(function(uniqueUser, index){
+        //         return usernames.indexOf(uniqueUser) >= index
+        //     })
+
+        //     this.filterUsers = uniqueUsers
+        // },
+        // populateUsers(){
+        //     this.$store.dispatch('fetchUsers')
+        // }
+    }
+}
+</script>
+
+<style scoped>
+h3{
+    color: #757575;
+}
+.v-icon{
+    font-size: 76px;
+    color: #E0E0E0;
+}
+
+</style>
