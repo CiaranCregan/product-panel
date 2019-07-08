@@ -3,6 +3,24 @@
     <v-toolbar app flat class="grey lighten-4">
       <v-toolbar-side-icon @click="sidebarToggle = !sidebarToggle"></v-toolbar-side-icon>
       <v-spacer></v-spacer>
+      <v-toolbar-item>
+        <v-menu offset-y nudge-bottom="13">
+          <template v-slot:activator="{ on }">
+            <v-avatar 
+              color="blue darken-1"
+              size="35"
+              v-on="on"
+            >
+              <span class="white--text headline">C</span>
+            </v-avatar>
+          </template>
+          <v-list>
+            <v-list-tile>
+              <v-list-tile-title>Example 1</v-list-tile-title>
+            </v-list-tile>
+          </v-list>
+        </v-menu>
+      </v-toolbar-item>
     </v-toolbar>
 
     <v-navigation-drawer app fixed v-model="sidebarToggle" class="blue darken-1">
