@@ -5,11 +5,37 @@
                     <h3>Dashboard</h3>
                 </div>
             </v-flex>
-            <v-flex xs12 sm4 md3>
+            <v-flex xs12 sm4 md4>
                 <v-card dark class="ma-1" color="blue darken-1">
                     <v-card-title primary-title>
                         <div>
-                            <div class="headline">Unlimited music now</div>
+                            <div class="headline">Card 1</div>
+                            <span>Listen to your favorite artists and albums whenever and wherever, online and offline.</span>
+                        </div>
+                    </v-card-title>
+                    <v-card-actions>
+                        <v-btn flat dark>Listen now</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 md4>
+                <v-card class="ma-1" color="grey lighten-4">
+                    <v-card-title primary-title>
+                        <div>
+                            <div class="headline blueColor">Card 2</div>
+                            <span class="blueColor">Listen to your favorite artists and albums whenever and wherever, online and offline.</span>
+                        </div>
+                    </v-card-title>
+                    <v-card-actions>
+                        <v-btn flat class="blueColor">Listen now</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 md4>
+                <v-card dark class="ma-1" color="blue darken-1">
+                    <v-card-title primary-title>
+                        <div>
+                            <div class="headline">Card 3</div>
                             <span>Listen to your favorite artists and albums whenever and wherever, online and offline.</span>
                         </div>
                     </v-card-title>
@@ -55,5 +81,7 @@ h3{
     font-size: 76px;
     color: #E0E0E0;
 }
-
+.blueColor{
+    color: #1e88e5;
+}
 </style>
