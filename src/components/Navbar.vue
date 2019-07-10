@@ -84,5 +84,7 @@ hr{
 .v-navigation-drawer > .v-list .v-list__tile--active .v-list__tile__title {
   color: white;
 }
-
+.v-avatar{
+  cursor: pointer;
+}
 </style>
